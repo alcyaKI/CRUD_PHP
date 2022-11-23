@@ -35,13 +35,18 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <title>Article <?= $article['name']?></title>
 </head>
 <body>
     <main class="container">
         <div class="col-md-12 mt-5">
             <h1> Article n <?= $article['id']?> <?= $article['name']?> </h1>
+
+            <p>Name : <?= $article['name']?> </p>
+            <p>Price : <?= $article['price']?> </p>
+            <p>Price : <?= $article['stock']?> </p>
+            <a href="index.php" class="btn btn-danger"> Back</a>
         </div>
     </main>
 </body>
